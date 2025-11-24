@@ -1,0 +1,364 @@
+@font-face {
+    font-family: "Klavika-Regular";
+    src: url("fonts/klavika-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Klavika-BoldCondensed";
+    src: url("fonts/klavika-boldcond-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+.nav-items a:hover {
+    color: #E12A26;
+}
+
+/* Header */
+header {
+    padding: 1rem 2rem;
+    background: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+    width: 100%;
+}
+
+.header-title-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e12a26;
+    border-radius: 0;
+    flex-shrink: 0;
+}
+
+.header-title-box h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    letter-spacing: 1px;
+    font-family: "Klavika-BoldCondensed", sans-serif;
+}
+
+.header-image {
+    flex: 1;
+    border-radius: 0;
+    overflow: hidden;
+    height: 300px;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: white;
+}
+
+.books-section h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    font-family: "Klavika-Regular", sans-serif;
+}
+.books-section p {
+    color: #555;
+}
+
+.ebooks-section {
+    margin-top: 4rem;
+}
+
+.ebooks-section h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+.conference-section {
+    margin-top: 4rem;
+}
+
+.conference-section h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+.out-of-print-section {
+    margin-top: 4rem;
+}
+
+.out-of-print-section h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.book-card {
+    background: white;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.book-card:last-child {
+    border-bottom: none;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.book-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+.book-author {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-style: italic;
+    display: block;
+}
+
+.book-price {
+    font-size: 1.2rem;
+    color: #E12A26;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.book-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.book-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    color: #e12a26;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.book-link:hover {
+    opacity: 0.7;
+}
+
+.book-link img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: "Klavika-Regular", sans-serif;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+    color: #E12A26;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .header-title-box {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .header-image {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        flex: none;
+    }
+
+    .header-title-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-items {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .book-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .book-links {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
