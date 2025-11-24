@@ -19,7 +19,7 @@
 }
 
 html {
-    scroll-padding-top: 120px;
+    scroll-padding-top: 112px;
     scroll-behavior: smooth;
 }
 
@@ -321,7 +321,31 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 790px) and (max-width: 1100px) {
+    html {
+        scroll-padding-top: 157px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-items {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 789px) {
+    html {
+        scroll-padding-top: 0;
+    }
+
+    nav {
+        position: static;
+    }
+
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -345,9 +369,17 @@ footer {
         font-size: 1.5rem;
     }
 
-    .nav-items {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 0.5rem;
         font-size: 0.9rem;
+        align-items: center;
     }
 
     .book-card {
